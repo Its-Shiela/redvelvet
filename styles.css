@@ -260,7 +260,7 @@ li {
 }
 /* about */
 #about-section{
-    background: linear-gradient(180deg, #292929 3.48%, rgba(41, 41, 41, 0) 19.97%), url(../Red-Velvet/used_images/about_bg.jpg);
+    background: linear-gradient(180deg, #292929 3.48%, rgba(41, 41, 41, 0) 19.97%), url(used_images/about_bg.jpg);
     background-size: cover;
     background-position: center;
     opacity: 60%;
