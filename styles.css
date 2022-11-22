@@ -1,0 +1,475 @@
+/*body background-color is temporary*/
+/*change property value if needed*/
+body{
+	background-color: #A9AF7E;
+}
+
+#logo{
+	width: 5rem;
+	max-width: 100%;
+	display: block;
+	height: 5rem;
+}
+.irene, .seulgi, .wendy, .yerim, .joy{
+	width: 17.5rem;
+	max-width: 100%;
+	display: flex;
+	height: 22rem;
+	border-radius: 2rem;
+
+}
+.img-card{
+	width: 18rem;
+	max-width: 100%;
+	display: block;
+	height: 15rem;
+}
+i{
+	color: #ffffff;
+}
+/*head*/
+@font-face {
+  font-family: 'Antro Vectra';
+  src: url('antro_vectra/Antro_Vectra.otf') format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PlayFair Display';
+  src: url('Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'PlayFair Display Regular';
+  src: url('Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #292929;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding:0px 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.header-container {
+  min-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(used_images/header_bg.png);
+  background-position: bottom;
+  background-color: grey;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: block;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.landing-content p {
+  color: #fff;
+  position: absolute;
+  align-items: center;
+}
+/* Logo Section       */
+.header-images {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px 5px;
+
+}
+.brand-logo {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.btn {
+  font-family: ;
+  margin-top: 40px;
+  padding: 14px 25px;
+  background: #292929;
+  border-style: none;
+  color: whitesmoke;
+  background-color: #402421;
+  border-radius: 12px;
+}
+.landing-page {
+  margin-top: -20px;
+}
+.btn a {
+  color: #fff;
+  font-family: 'PlayFair Display';
+  font-size: 12px;
+}
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.landing-description h1 {
+  font-family: 'Antro Vectra';
+  color: #fff;
+  font-size: 128px;
+  margin-top: 10rem;
+  align-items: center;
+}
+.landing-description p {
+  position: sticky;
+  margin-top: -110px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 12px;
+}
+.landing-description span {
+  display: block;
+}
+/* End of Logo Section     */
+/*    Nav links        */
+.nav {
+  padding: 10px 60px;
+  margin-right: 80px;
+}
+li {
+  list-style: none;
+  padding-left: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  display: block;
+  padding:10px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: 'PlayFair Display Regular';
+}
+.nav-link:hover {
+  text-decoration:none;
+  opacity: 0.9;
+}
+.is-active {
+  display: none;
+}
+.nav-burger {
+  position: fixed;
+  right: 20px;
+}
+.nav-cancel{
+  position: fixed;
+  right: 260px;
+}
+
+.nav {
+  right: 0;
+  margin-right: 150px;
+}
+.divider {
+    width: 100%;
+    height: 110px;
+    box-shadow: 0px 100px 150px #292929, 0px -50px 50px #292929, 0px 4px 2px -2px #292929;
+  }
+  .space {
+    display: none;
+  }
+  #active {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px), screen and (max-height: 400px) and
+(orientation: landscape) {
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+ .nav {
+  display: none;
+  }
+
+.landing-description .landing-page-title {
+    margin-top: 150px;
+    margin-right: 40px;
+    font-size: 70px;
+    padding-bottom: 40px;
+  }
+  .landing-description .landing-page-sub {
+    font-size: 12px;
+  }
+.btn {
+  font-family: ;
+  margin-top: 40px;
+  padding: 14px 25px;
+  background: #292929;
+  border-style: none;
+  color: whitesmoke;
+  background-color: #402421;
+  border-radius: 12px;
+}
+  .divider {
+    height: 70px !important;
+  }
+.brand-logo {
+  position: absolute;
+  display: flex;
+  margin-top: 30px;
+  margin-left: -90px;
+  cursor: pointer;
+}
+.nav-burger {
+  position: absolute;
+  margin-right: 15px;
+
+}
+.nav-cancel {
+  position: absolute;
+  margin-right: -120px;
+  margin-top: -600px;
+}
+}
+/* Hide nav links on screens with width below 768px  */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-burger {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  .nav-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 15px;
+    color: whitesmoke;
+  }
+}
+/* about */
+#about-section{
+    background: linear-gradient(180deg, #292929 3.48%, rgba(41, 41, 41, 0) 19.97%), url(../Red-Velvet/used_images/about_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 60%;
+    height: 657px;
+    padding: 25px 174px 128px 184px;
+}
+#about-section h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 85px;
+    letter-spacing: 0.075em;
+    text-align:center;
+    margin-bottom: 120px ;
+    color: #E5E5E5;
+}
+#about-section h3{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    display: flex;
+    text-align: center;
+    color: #E5E5E5;
+}
+/* Profile Section */
+
+.irene, .seulgi, .wendy, .yerim, .joy{
+    transition: 0.5s;
+}
+.irene::before, .seulgi::before, .wendy::before, .yerim::before, .joy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  .irene:hover::before, .seulgi:hover::before, .wendy:hover::before, .yerim:hover::before, .joy:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffffff;
+  }
+  .irene:hover, .seulgi:hover, .wendy:hover, .yerim:hover, .joy:hover {
+    color: #ffffff;
+    box-shadow: 0 0 7px #ffffff;
+    text-shadow: 0 0 7px #ffffff;
+  }
+  .grid{
+  	display: flex;
+  	flex-flow: row wrap;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  }
+  #profile{
+  	font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 85px;
+    letter-spacing: 0.075em;
+    text-align:center;
+    margin-bottom: 120px ;
+    color: #E5E5E5;
+    text-align: center;
+    position: relative;
+  }
+  .img-box{
+  	border-style: solid;
+  	border-color: #ffffff;
+  	border-radius: 2.5rem;
+  	padding: 3rem;
+    position: relative;
+  }
+  .mmbr-name{
+  	font-family: 'Antro Vectra';
+  	color: #ffffff;
+  	font-size: 5rem;
+  	text-align: center;
+  	margin: 1rem;
+    position: relative;
+  }
+  #img-1{
+  	padding-bottom: 1.6rem;
+  }
+  .profile-p{
+  	color: #ffffff;
+  	text-align: center;
+  	font-size: 1.2rem;
+    position: relative;
+  }
+  .container-1{
+    position: relative; 
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+  }
+  .container-1::before{
+    content: "";
+    background-image: url('used_images/profile_bg.png');
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.10;
+  }
+
+
+/* Discography Section */
+.discography{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    max-height: 656px;
+    padding: 18px 81px 50px 81px;
+    margin: 115px 120px 96px 120px;
+    display: flex;
+    background: linear-gradient(181.21deg, #292929 -13.64%, #292929 -0.83%, rgba(41, 41, 41, 0) 115.36%), url(used_images/dicography_bg.jpg);
+    border-radius: 8px;
+    background-size: cover;
+    color: #E5E5E5;
+}
+.phase{
+    float: left;
+    flex: 50%;
+}
+#discography-section h3{
+    margin: 0 50px 34px 0;
+    font-style: inherit;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 85px;
+}
+.card{
+    position: absolute;
+    padding: 33px 27px 10px 27px;
+    background: rgba(64, 36, 33, 0.84);
+    border-radius: 7px;
+    margin: 0 0 96px 0;
+    max-width: 30%;
+}
+h4{
+    font-weight: inherit;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+.list{
+    width: 93%; 
+    height: 432px;
+}
+.list li{
+    display:inline-block;
+    width: 43%;
+    list-style: none;
+    margin:0 0 0 10px;
+    font-size: 16px;
+    line-height: 40px;
+}  
+.track{
+    font-size: 24px;
+    line-height: 32px;
+    margin: 40px;
+}
+
+/*footer*/
+footer{
+
+	background-color: #402421;
+	padding: 0%;
+	margin: 0%;
+
+}
+.footer_wrapper {
+
+	text-align: center;
+    font-family: 'Playfair Display';
+	font-weight: 600;
+	font-style: normal;
+	padding: 4%;
+	color:  #E5E5E5;
+}
+.footer_title{
+
+	line-height: 85px;
+    letter-spacing: 0.065em;
+	font-size: 64px;
+	margin-block-start: auto;
+    margin-block-end: auto;
+}
+footer p{
+
+    font-size: 12px;
+	padding: 1%;
+	letter-spacing: 0.085em;
+	margin-block-start: auto;
+    margin-block-end: auto;
+}
+i{
+
+    padding: 2%;
+    cursor: pointer;
+}
